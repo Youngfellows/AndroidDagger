@@ -2,6 +2,7 @@ package com.speex.androiddagger.di.components;
 
 
 import com.speex.androiddagger.MyApplication;
+import com.speex.androiddagger.di.modules.BuildersModule;
 
 import dagger.Component;
 import dagger.android.AndroidInjector;
@@ -14,7 +15,8 @@ import dagger.android.support.AndroidSupportInjectionModule;
  */
 
 @Component(modules = {
-        AndroidSupportInjectionModule.class
+        AndroidSupportInjectionModule.class,
+        BuildersModule.class
 })
 public interface AppComponent extends AndroidInjector<MyApplication> {
 

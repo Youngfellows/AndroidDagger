@@ -14,6 +14,8 @@ import dagger.android.AndroidInjector;
  * c.在SecondActivity中注入UserModule.class提供的Login对象
  * <p>
  * 注意：这里UserComponent2使用@Subcomponent注解是为了使用AppComponent中的AndroidSupportInjectionModule.
+ *
+ * 我们声明Subcomponent,其关联的module可以提供MainActivity所需要的所有依赖的实例。
  */
 
 @Subcomponent(modules = {UserModule.class})

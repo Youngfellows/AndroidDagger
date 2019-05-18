@@ -2,6 +2,7 @@ package com.speex.androiddagger.activity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.speex.androiddagger.R;
 import com.speex.androiddagger.bean.Login;
@@ -25,5 +26,7 @@ public class SecondActivity extends DaggerAppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Log.i(TAG, "Name: " + mLogin.getName() + " ,psw: " + mLogin.getPassword());
+        TextView tv = findViewById(R.id.tv);
+        tv.setText("Name: " + mLogin.getName() + " ,psw: " + mLogin.getPassword());
     }
 }
