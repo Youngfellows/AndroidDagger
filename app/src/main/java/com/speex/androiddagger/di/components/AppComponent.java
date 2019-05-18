@@ -10,6 +10,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
 /**
  * 第二种依赖注入方式
  * 第1步: 在AppComponent中统一注入AndroidSupportInjectionModule
+ * 其实AppComponent就是AndroidInjector，在Application中注入
  */
 
 @Component(modules = {

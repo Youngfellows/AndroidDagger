@@ -13,4 +13,11 @@
         android:onClick="normalDaggerUse"
         android:text="普通方式使用Dagger2" />
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="androidInjectionUse"
+        android:text="AndroidInjection使用" />
+
 </LinearLayout>

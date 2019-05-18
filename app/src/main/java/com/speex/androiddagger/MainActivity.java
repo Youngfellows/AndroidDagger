@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.speex.androiddagger.activity.NormalActivity;
+import com.speex.androiddagger.activity.SecondActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void normalDaggerUse(View view) {
         Intent intent = new Intent(this, NormalActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * AndroidInjection方式使用Dagger2
+     *
+     * @param view
+     */
+    public void androidInjectionUse(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
 
