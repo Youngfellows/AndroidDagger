@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.speex.androiddagger.R;
+import com.speex.androiddagger.base.BaseActivity;
 import com.speex.androiddagger.bean.Student;
 import com.speex.androiddagger.mvp.contract.NormalContract;
 import com.speex.androiddagger.mvp.presenter.NormalPresenter;
@@ -16,7 +17,7 @@ import javax.inject.Inject;
 import dagger.android.AndroidInjection;
 import dagger.android.AndroidInjector;
 
-public class NormalActivity extends AppCompatActivity {
+public class NormalActivity extends BaseActivity {
     private String TAG = this.getClass().getSimpleName();
 
     /**
@@ -40,7 +41,6 @@ public class NormalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AndroidInjection.inject(this);
         setContentView(R.layout.activity_normal);
 
         mTvResult = findViewById(R.id.tv_result);
