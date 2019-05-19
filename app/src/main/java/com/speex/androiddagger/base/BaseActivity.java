@@ -12,6 +12,7 @@ import dagger.android.AndroidInjection;
 public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //2.Activity级的依赖注入
         AndroidInjection.inject(this);//依赖注入
         super.onCreate(savedInstanceState);
     }

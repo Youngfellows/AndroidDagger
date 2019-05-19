@@ -23,6 +23,7 @@ public class MyApplication extends Application implements HasActivityInjector {
     @Override
     public void onCreate() {
         super.onCreate();
+        //1.Application级的依赖注入
         DaggerMyAppComponent.create().inject(this);
     }
 
