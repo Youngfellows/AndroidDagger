@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.speex.androiddagger.activity.NormalActivity;
-import com.speex.androiddagger.activity.SecondActivity;
+import com.speex.androiddagger.mvp.activity.NormalActivity;
+import com.speex.androiddagger.mvp.activity.SecondActivity;
 
 public class MainActivity extends AppCompatActivity {
 

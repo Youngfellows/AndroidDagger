@@ -1,18 +1,18 @@
-package com.speex.androiddagger.activity;
+package com.speex.androiddagger.mvp.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.speex.androiddagger.R;
 
-public class NormalActivity extends AppCompatActivity {
+
+public class SecondActivity extends AppCompatActivity {
     private String TAG = this.getClass().getSimpleName();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_normal);
-
+        setContentView(R.layout.activity_second);
     }
 }
