@@ -2,6 +2,7 @@ package com.speex.androiddagger.di.components.base;
 
 import com.speex.androiddagger.base.MyApplication;
 import com.speex.androiddagger.di.modules.NormalActivityModule;
+import com.speex.androiddagger.di.modules.SecondActivityModule;
 
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
@@ -19,7 +20,12 @@ import dagger.android.support.AndroidSupportInjectionModule;
 @Component(modules = {
         AndroidInjectionModule.class,
         AndroidSupportInjectionModule.class,
-        NormalActivityModule.class
+        //依赖注入NormalActivityModule
+        NormalActivityModule.class,
+
+        //依赖注入SecondActivityModule
+        SecondActivityModule.class
+
 })
 public interface MyAppComponent {
     void inject(MyApplication application);

@@ -3,6 +3,7 @@ package com.speex.androiddagger.base;
 import android.app.Activity;
 import android.app.Application;
 
+
 import com.speex.androiddagger.di.components.base.DaggerMyAppComponent;
 
 import javax.inject.Inject;
